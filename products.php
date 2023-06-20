@@ -15,22 +15,22 @@ class Product
 }
 
 
-$snackDog = new Product('Barrette', ' 19.99$', 'Per cani');
+$snackDog = new Product('Barrette',  19.99, 'Per cani');
 
-$snackCat = new Product('Biscotti', '15.99$', 'Per Gatto');
-
-
-$foodDog = new Product('crocchette di manzo', '25.99$', 'Per Cani');
-
-$foodCat = new Product('crocchette di pesce', '15.99$', 'Per Gatto');
+$snackCat = new Product('Biscotti', 15.99, 'Per Gatto');
 
 
+$foodDog = new Product('crocchette di manzo', 25.99, 'Per Cani');
 
-$kennelsDog = new Product('Casetta in legno', '100.59$', 'Per Cani');
-
-$kennelsCat = new Product('Cuscino', '40.99$', 'Per Gatto');
+$foodCat = new Product('crocchette di pesce', 15.99, 'Per Gatto');
 
 
-$gameDog = new Product('Osso di gomma', '5,99$', 'Per Cani');
 
-$gameCat = new Product('tiragraffi', '42.99$', 'Per Gatto');
+$kennelsDog = new Product('Casetta in legno', 100.59, 'Per Cani');
+
+$kennelsCat = new Product('Cuscino', 40.99, 'Per Gatto');
+
+
+$gameDog = new Product('Osso di gomma', 5, 99, 'Per Cani');
+
+$gameCat = new Product('tiragraffi', 42.99, 'Per Gatto');
