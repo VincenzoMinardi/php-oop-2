@@ -17,7 +17,7 @@
 
 include __DIR__ . '/products.php';
 
-class animalSpecies
+class Dog
 {
     public $species;
     public $size;
@@ -31,15 +31,24 @@ class animalSpecies
     }
 }
 
-class Product extends animalSpecies
-{
-}
-
-$Dog = new animalSpecies('Cane', 'Grande', 'Bulldog');
+$Dog = new Dog('Cane', 'Grande', 'Media');
 
 var_dump($Dog);
 
+class Cat
+{
+    public $species;
+    public $size;
+    public $type;
 
-$Cat = new animalSpecies('Catto', 'Piccola', 'Persiano');
+    public function __construct($species, $size, $type)
+    {
+        $this->species = $species;
+        $this->size = $size;
+        $this->type = $type;
+    }
+}
+
+$Cat = new Cat('Gatto', 'Media', 'Piccola');
 
 var_dump($Cat);
