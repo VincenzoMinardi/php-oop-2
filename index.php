@@ -7,11 +7,12 @@ include __DIR__ . '/game.php';
 
 $ArrProducts = [
 
-    new Animals('Cane', 'Grande', 'Media', 'Gatto', 'Media', 'Piccola'),
+
     new Food('crocchette di manzo', '25.99', 'Per Cani', '15', 'crocchette di pesce', '15.99', 'Per Gatto', '5'),
     new Games('Osso di gomma', '5, 99', 'Per Cani', 'tiragraffi', '42.99', 'Per Gatto'),
     new Kennels('Casetta in legno', '100.59', 'Per Cani', 'Cuscino', '40.99', 'Per Gatto'),
-    new Snack('Barrette',  '19.99', 'Per cani', '500', 'Biscotti', '15.99', 'Per Gatto', '350')
+    new Snack('Barrette',  '19.99', 'Per cani', '500', 'Biscotti', '15.99', 'Per Gatto', '350'),
+    new Animals('Cane', 'Grande', 'Media', 'Gatto', 'Media', 'Piccola')
 ];
 ?>
 
@@ -35,8 +36,9 @@ $ArrProducts = [
     foreach ($ArrProducts as $element) { ?>
         <div class="container dog">
             <div class="card">
-                <img src="" alt="">
-                <h3><?php echo $element->nameProduct ?></h3>
+                <div><?php echo $element->nameProduct ?></div>
+                <div><?php echo $element->price ?>$</div>
+                <?php echo $element->type ?>
             </div>
             <div class="card"></div>
             <div class="card"></div>
