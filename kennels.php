@@ -16,6 +16,6 @@ class Kennels
     }
 }
 
-$kennelsDog = new Product('Casetta in legno', 100.59, 'Per Cani');
+$kennelsDog = new Kennels('Casetta in legno', 100.59, 'Per Cani');
 
-$kennelsCat = new Product('Cuscino', 40.99, 'Per Gatto');
+$kennelsCat = new Kennels('Cuscino', 40.99, 'Per Gatto');

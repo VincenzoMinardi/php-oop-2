@@ -5,17 +5,19 @@ class Food
     public string $nameProduct;
     public int  $price;
     public string $type;
+    public int $weight;
 
 
 
-    public function __construct($nameProduct, $price, $type)
+    public function __construct($nameProduct, $price, $type, $weight)
     {
         $this->nameProduct = $nameProduct;
         $this->price = $price;
         $this->type = $type;
+        $this->weight = $weight;
     }
 }
 
-$foodDog = new Product('crocchette di manzo', 25.99, 'Per Cani');
+$foodDog = new Food('crocchette di manzo', 25.99, 'Per Cani', 15);
 
-$foodCat = new Product('crocchette di pesce', 15.99, 'Per Gatto');
+$foodCat = new Food('crocchette di pesce', 15.99, 'Per Gatto', 5);

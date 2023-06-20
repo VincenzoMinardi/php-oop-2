@@ -1,6 +1,6 @@
 <?php
 
-class Game
+class Games
 {
     public string $nameProduct;
     public int  $price;
@@ -16,6 +16,6 @@ class Game
     }
 }
 
-$gameDog = new Product('Osso di gomma', 5, 99, 'Per Cani');
+$gameDog = new Games('Osso di gomma', 5, 99, 'Per Cani');
 
-$gameCat = new Product('tiragraffi', 42.99, 'Per Gatto');
+$gameCat = new Games('tiragraffi', 42.99, 'Per Gatto');

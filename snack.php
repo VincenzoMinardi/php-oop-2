@@ -1,21 +1,24 @@
 <?php
 
-class snack
+class Snack
 {
     public string $nameProduct;
     public int  $price;
     public string $type;
+    public int $weight;
 
 
-    public function __construct($nameProduct, $price, $type)
+
+    public function __construct($nameProduct, $price, $type, $weight)
     {
         $this->nameProduct = $nameProduct;
         $this->price = $price;
         $this->type = $type;
+        $this->weight = $weight;
     }
 }
 
 
-$snackDog = new Product('Barrette',  19.99, 'Per cani');
+$snackDog = new Snack('Barrette',  19.99, 'Per cani', 500);
 
-$snackCat = new Product('Biscotti', 15.99, 'Per Gatto');
+$snackCat = new Snack('Biscotti', 15.99, 'Per Gatto', 350);
