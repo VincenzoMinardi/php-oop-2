@@ -40,7 +40,9 @@ $ArrProducts = [
                 <div><?php echo $element->price ?>$</div>
                 <?php echo $element->type ?>
             </div>
-            <div class="card"></div>
+            <div class="card">
+
+            </div>
             <div class="card"></div>
             <div class="card"></div>
             <div class="card"></div>
