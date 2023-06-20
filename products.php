@@ -6,6 +6,8 @@ class Product
     public int  $price;
     public string $type;
 
+
+
     public function __construct($nameProduct, $price, $type)
     {
         $this->nameProduct = $nameProduct;
