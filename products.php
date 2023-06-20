@@ -1,5 +1,7 @@
 <?php
 
+
+
 class Product
 {
     public string $nameProduct;

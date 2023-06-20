@@ -15,6 +15,8 @@
 
 <?php
 
+include __DIR__ . '/products.php';
+
 class animalSpecies
 {
     public $species;
