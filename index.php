@@ -31,7 +31,7 @@ class animalSpecies
 
 $Dog = new animalSpecies('Cane', 'Grande', 'Bulldog');
 
-var_dump($dog);
+var_dump($Dog);
 
 
 $Cat = new animalSpecies('Catto', 'Piccola', 'Persiano');
