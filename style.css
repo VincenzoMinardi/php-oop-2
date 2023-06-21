@@ -7,23 +7,39 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
-  margin: 0 auto;
-  padding: 1rem;
-  max-width: 1000px;
-}
-
-.cat {
-  margin-top: 3rem;
-}
-
-h1,
-h2 {
-  text-align: center;
+  justify-content: center;
 }
 
 .card {
-  height: 300px;
-  width: 300px;
-  border: 1px solid black;
+  width: 250px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #f8f8f8;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card div {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.card div {
+  font-size: 18px;
+}
+
+.card div {
+  color: #888;
+}
+
+.card div {
+  color: #555;
 }
