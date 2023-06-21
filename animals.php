@@ -8,7 +8,7 @@ class Animals
     public $size;
 
 
-    public function __construct($species, $size,)
+    public function __construct($species, $size)
     {
         $this->species = $species;
         $this->size = $size;

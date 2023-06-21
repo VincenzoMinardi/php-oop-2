@@ -75,9 +75,9 @@ $ArrProducts = [
 
 // Facciamo un forEach per richiamarci ogni singola chiave dell'array
 
-$arrFood = [];
+$ArrFood = [];
 foreach ($ArrProducts['food'] as $food) {
-    $arrFood[] = new Food(
+    $ArrFood[] = new Food(
         $food['nameProduct'],
         $food['price'],
         $food['type'],
@@ -85,9 +85,9 @@ foreach ($ArrProducts['food'] as $food) {
     );
 }
 
-$arrGames = [];
+$ArrGames = [];
 foreach ($ArrProducts['Games'] as $games) {
-    $arrGames[] = new Games(
+    $ArrGames[] = new Games(
         $games['nameProduct'],
         $games['price'],
         $games['type'],
@@ -95,18 +95,18 @@ foreach ($ArrProducts['Games'] as $games) {
     );
 }
 
-$arrKennels = [];
+$ArrKennels = [];
 foreach ($ArrProducts['Kennels'] as $kennels) {
-    $arrKennels[] = new Kennels(
+    $ArrKennels[] = new Kennels(
         $kennels['nameProduct'],
         $kennels['price'],
         $kennels['type']
     );
 }
 
-$arrSnack = [];
+$ArrSnack = [];
 foreach ($ArrProducts['Snack'] as $snack) {
-    $arrSnack[] = new Snack(
+    $ArrSnack[] = new Snack(
         $snack['nameProduct'],
         $snack['price'],
         $snack['type'],
@@ -116,7 +116,7 @@ foreach ($ArrProducts['Snack'] as $snack) {
 
 $arrAnimals = [];
 foreach ($ArrProducts['Animals'] as $animals) {
-    $arrAnimals[] = new Animals(
+    $ArrAnimals[] = new Animals(
         $animals['species'],
         $animals['size']
     );
@@ -140,13 +140,35 @@ foreach ($ArrProducts['Animals'] as $animals) {
     <div class="container">
         <!-- Creiamo delle card all'interno dell'HTML -->
         <?php
-        foreach ($ArrFood as $food) {
-        ?>
+        foreach ($ArrFood as $food) { ?>
             <div class="card">
-
+                <div><?php echo $food->nameProduct; ?></div>
+                <div><?php echo $food->price; ?></div>
+                <div><?php echo $food->type; ?></div>
             </div>
         <?php } ?>
+
+        <?php
+        foreach ($ArrGames as $games) { ?>
+            <div class="card">
+                <div><?php echo $games->nameProduct; ?></div>
+                <div><?php echo $games->price; ?></div>
+                <div><?php echo $games->type; ?></div>
+            </div>
+        <?php } ?>
+
+        <?php
+        foreach ($ArrKennels as $Kennels) { ?>
+            <div class="card">
+                <div><?php echo  $Kennels->nameProduct; ?></div>
+                <div><?php echo $Kennels->price; ?></div>
+                <div><?php echo $Kennels->type; ?></div>
+            </div>
+        <?php } ?>
+
+
     </div>
+
 
 
 </body>
