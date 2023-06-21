@@ -6,12 +6,11 @@ class Animals
 {
     public $species;
     public $size;
-    public $type;
 
-    public function __construct($species, $size, $type)
+
+    public function __construct($species, $size,)
     {
         $this->species = $species;
         $this->size = $size;
-        $this->type = $type;
     }
 }
