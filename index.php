@@ -162,7 +162,7 @@ foreach ($ArrProducts['Animals'] as $animals) {
             <div class="card">
                 <img src="<?php echo $food->image; ?>" alt="">
                 <div><?php echo $food->nameProduct; ?></div>
-                <div><?php echo $food->price; ?></div>
+                <div><?php echo $food->price; ?>€</div>
                 <div><?php echo $food->type; ?></div>
             </div>
         <?php } ?>
@@ -172,7 +172,7 @@ foreach ($ArrProducts['Animals'] as $animals) {
             <div class="card">
                 <img src="<?php echo $games->image; ?>" alt="">
                 <div><?php echo $games->nameProduct; ?></div>
-                <div><?php echo $games->price; ?></div>
+                <div><?php echo $games->price; ?>€</div>
                 <div><?php echo $games->type; ?></div>
             </div>
         <?php } ?>
@@ -182,7 +182,7 @@ foreach ($ArrProducts['Animals'] as $animals) {
             <div class="card">
                 <img src="<?php echo $Kennels->image; ?>" alt="">
                 <div><?php echo  $Kennels->nameProduct; ?></div>
-                <div><?php echo $Kennels->price; ?></div>
+                <div><?php echo $Kennels->price; ?>€</div>
                 <div><?php echo $Kennels->type; ?></div>
             </div>
         <?php } ?>
@@ -192,7 +192,7 @@ foreach ($ArrProducts['Animals'] as $animals) {
             <div class="card">
                 <img src="<?php echo $snack->image; ?>" alt="">
                 <div><?php echo  $snack->nameProduct; ?></div>
-                <div><?php echo $snack->price; ?></div>
+                <div><?php echo $snack->price; ?>€</div>
                 <div><?php echo $snack->type; ?></div>
             </div>
         <?php } ?>
