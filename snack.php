@@ -2,7 +2,7 @@
 
 class Snack extends Product
 {
-    public int $weight;
+    public  $weight;
 
 
 

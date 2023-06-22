@@ -59,14 +59,14 @@ $ArrProducts = [
             'nameProduct' => 'Barrette',
             'price' => '19.99',
             'type' => 'Per Cani',
-            'weight' => '500',
+            'weight' => '50',
             'image' => 'https://shop-cdn-m.mediazs.com/bilder/crave/protein/bar/snack/per/cane/3/400/186528_pla_marsgermany_crave_hund_proteinbars_huhn_76g_hs_01_3.jpg'
         ],
         [
             'nameProduct' => 'Biscotti',
             'price' => '15.99',
             'type' => 'Per Gatto',
-            'weight' => '350',
+            'weight' => '25',
             'image' => 'https://shop-cdn-m.mediazs.com/bilder/whiskas/crunch/con/pollo/tacchino/anatra/1/400/14119_PLA_rgb_Whiskas_Crunch_mit_Huhn__Truthahn_Ente_100g_1.jpg'
         ],
     ],
@@ -162,6 +162,7 @@ foreach ($ArrProducts['Animals'] as $animals) {
             <div class="card">
                 <img src="<?php echo $food->image; ?>" alt="">
                 <div><?php echo $food->nameProduct; ?></div>
+                <div><?php echo $food->weight; ?>:kg</div>
                 <div><?php echo $food->price; ?>€</div>
                 <div><?php echo $food->type; ?></div>
             </div>
@@ -192,6 +193,7 @@ foreach ($ArrProducts['Animals'] as $animals) {
             <div class="card">
                 <img src="<?php echo $snack->image; ?>" alt="">
                 <div><?php echo  $snack->nameProduct; ?></div>
+                <div><?php echo $food->weight; ?>:gr</div>
                 <div><?php echo $snack->price; ?>€</div>
                 <div><?php echo $snack->type; ?></div>
             </div>
